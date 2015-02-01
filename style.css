@@ -1,0 +1,35 @@
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  height: 100%;
+}
+
+.content {
+  height: 2000px;
+  width: 350px;
+  background: url("bg.png");
+}
+
+.scroller {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+.scrollbar {
+  display: none;
+}
+
+.baron .scrollbar {
+  display: block;
+  position: absolute;
+  background: black;
+  z-index: 999;
+  border-radius: 3px;
+  right: 2px;
+  width: 7px;
+  opacity: 0.7;
+}
