@@ -1,19 +1,8 @@
 $(function(){
-	var params = {
-      root: 'body',
-      scroller: '.scroller',
-      bar: '.scrollbar',
-      barOnCls: 'baron'
-    };
+	var outerScrollbar = new scrollbar('body', '.scroller', '.scrollbar');
+	var innerScrollbar = new scrollbar('.container', '.scroller', '.scrollbar');
 
-    baron(params);
-
-    var params = {
-      root: '.container',
-      scroller: '.scroller',
-      bar: '.scrollbar',
-      barOnCls: 'baron'
-    };
-
-    baron(params);
+	outerScrollbar.init();
+	innerScrollbar.init();
+	innerScrollbar.setEffect();
 });
