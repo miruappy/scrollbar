@@ -7,16 +7,26 @@ body {
   height: 100%;
 }
 
-.content {
-  height: 2000px;
-  width: 350px;
-  background: url("bg.png");
+.container {
+  position: absolute;
+  left: 500px;
+  top: 0px;
+  height: 500px;
+  width: 500px;
+  border: 5px solid grey;
+  overflow: hidden;
 }
 
 .scroller {
   overflow-y: scroll;
   overflow-x: hidden;
   height: 100%;
+}
+
+.content {
+  height: 2000px;
+  width: 350px;
+  background: url("bg.png");
 }
 
 .scrollbar {
